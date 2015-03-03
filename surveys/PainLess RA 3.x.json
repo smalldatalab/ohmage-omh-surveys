@@ -1,0 +1,1813 @@
+{
+    "name": "Intake Survey",
+    "description": "A survey to gather information about a patient's medications at intake.",
+    "icon_id": null,
+    "survey_items": [
+         {
+            "survey_item_type": "number_single_choice_prompt",
+            "survey_item_id": "ExplainIntake",
+            "condition": null,
+            "display_type": "list",
+            "text": "Please answer the following questions with regard to your Rheumatoid Arthritis",
+            "display_label": "Survey Explanation",
+            "skippable": false,
+            "default_response": null,
+            "choices": [
+                {
+                    "text": "OK",
+                    "value": 1
+                }
+            ]
+        },
+		{
+            "survey_item_type": "string_multi_choice_prompt",
+            "survey_item_id": "Tablets",
+            "condition": null,
+            "display_type": "list",
+            "text": "Which TABLETS are you currently taking?",
+            "display_label": "Tablets",
+            "skippable": false,
+            "default_response": null,
+            "choices": [
+                {
+                    "text": "Methotrexate",
+                    "value": "Methotrexate"
+                },
+                {
+                    "text": "Hydroxychloroquine",
+                    "value": "Hydroxychloroquine"
+                },
+				{
+                    "text": "Sulfasalazine",
+                    "value": "Sulfasalazine"
+                },
+                {
+                    "text": "Tofacitinib",
+                    "value": "Tofacitinib"
+                },
+				{
+                    "text": "None of the above",
+                    "value": "0"
+                }
+            ],
+            "min_choices": null,
+            "max_choices": null
+        },
+		{
+            "survey_item_type": "string_multi_choice_prompt",
+            "survey_item_id": "Injections",
+            "condition": null,
+            "display_type": "list",
+            "text": "Which INJECTIONS are you currently receiving?",
+            "display_label": "Injections",
+            "skippable": false,
+            "default_response": null,
+            "choices": [
+                {
+                    "text": "Methotrexate",
+                    "value": "Methotrexate"
+                },
+                {
+                    "text": "Etanercept",
+                    "value": "Etanercept"
+                },
+				{
+                    "text": "Adalimumab",
+                    "value": "Adalimumab"
+                },
+                {
+                    "text": "Certolizumab",
+                    "value": "Certolizumab"
+                },
+				{
+                    "text": "Golimumab",
+                    "value": "Golimumab"
+                },
+                {
+                    "text": "Abatacept",
+                    "value": "Abatacept"
+                },
+				{
+                    "text": "Tocilizumab",
+                    "value": "Tocilizumab"
+                },
+                {
+                    "text": "Gold",
+                    "value": "Gold"
+                },
+				{
+                    "text": "None of the above",
+                    "value": "0"
+                }
+            ],
+            "min_choices": null,
+            "max_choices": null
+        },
+		{
+            "survey_item_type": "string_multi_choice_prompt",
+            "survey_item_id": "Infusions",
+            "condition": null,
+            "display_type": "list",
+            "text": "Which regular INFUSIONS are you currently receiving?",
+            "display_label": "Infusions",
+            "skippable": false,
+            "default_response": null,
+            "choices": [
+                {
+                    "text": "Infliximab",
+                    "value": "Infliximab"
+                },
+                {
+                    "text": "Golimumab",
+                    "value": "Golimumab"
+                },
+				{
+                    "text": "Tocilizumab",
+                    "value": "Tocilizumab"
+                },
+                {
+                    "text": "Rituximab",
+                    "value": "Rituximab"
+                },
+				{
+                    "text": "None of the above",
+                    "value": "0"
+                }
+            ],
+            "min_choices": null,
+            "max_choices": null
+        }
+	]
+},
+
+{
+    "name": "Daily Morning Questionnaire",
+    "description": "A survey to gather information about a patient's daily RA pain.",
+    "icon_id": null,
+    "survey_items": [
+		{
+            "survey_item_type": "number_prompt",
+            "survey_item_id": "RAToday",
+            "condition": null,
+            "display_type": "picker",
+            "text": "How is your Rheumatoid Arthritis today? (0 = best, 10 = worst)",
+            "display_label": "RAToday",
+            "skippable": false,
+            "default_response": null,
+            "min": 0,
+            "max": 10,
+            "whole_numbers_only": true
+        },
+		{
+            "survey_item_type": "number_prompt",
+            "survey_item_id": "RAPainToday",
+            "condition": null,
+            "display_type": "picker",
+            "text": "How much pain is your RA causing you today? (0 = No Pain, 10 = Extreme Pain)",
+            "display_label": "RAPainToday",
+            "skippable": false,
+            "default_response": null,
+            "min": 0,
+            "max": 10,
+            "whole_numbers_only": true
+        }
+	]
+},
+
+{
+    "name": "RA Weekly Medication Survey (Thur)",
+    "description": "A survey to gather information about a patient's RA medications each week",
+    "icon_id": null,
+    "survey_items": [
+		{
+            "survey_item_type": "number_single_choice_prompt",
+            "survey_item_id": "ExplainThur",
+            "condition": null,
+            "display_type": "list",
+            "text": "Answer the following questions about your medications for your Rheumatoid Arthritis over the LAST WEEK",
+            "display_label": "Survey Explanation",
+            "skippable": false,
+            "default_response": null,
+            "choices": [
+                {
+                    "text": "OK",
+                    "value": 1
+                }
+            ]
+        },
+		{
+            "survey_item_type": "string_single_choice_prompt",
+            "survey_item_id": "StartMeds",
+            "condition": null,
+            "display_type": "list",
+            "text": "Have you increased or started a new RA medication?",
+            "display_label": "StartMeds",
+            "skippable": false,
+            "default_response": null,
+            "choices": [
+                {
+                    "text": "No",
+                    "value": "No"
+                },
+				{
+                    "text": "Yes",
+                    "value": "Yes"
+                }
+            ]
+        },
+		{
+            "survey_item_type": "string_multi_choice_prompt",
+            "survey_item_id": "StartMedsChoices",
+            "condition": "StartMeds == \"Yes\"",
+            "display_type": "list",
+            "text": "Please check all medications you have increased or started taking:",
+            "display_label": "StartMedsChoices",
+            "skippable": false,
+            "default_response": null,
+            "choices": [
+                {
+                    "text": "Methotrexate pills",
+                    "value": "Methotrexate pills"
+                },
+				{
+                    "text": "Methotrexate injection",
+                    "value": "Methotrexate injection"
+                },
+				{
+                    "text": "Hydroxychloroquine",
+                    "value": "Hydroxychloroquine"
+                },
+				{
+                    "text": "Sufasalazine",
+                    "value": "Sufasalazine"
+                },
+				{
+                    "text": "Gold",
+                    "value": "Gold"
+                },
+                {
+                    "text": "Etanercept",
+                    "value": "Etanercept"
+                },
+				{
+                    "text": "Adalimumab",
+                    "value": "Adalimumab"
+                },
+                {
+                    "text": "Certolizumab",
+                    "value": "Certolizumab"
+                },
+				{
+                    "text": "Golimumab",
+                    "value": "Golimumab"
+                },
+                {
+                    "text": "Abatacept",
+                    "value": "Abatacept"
+                },
+				{
+                    "text": "Tocilizumab",
+                    "value": "Tocilizumab"
+                },
+                {
+                    "text": "Infliximab",
+                    "value": "Infliximab"
+                },
+                {
+                    "text": "Tofacitinib",
+                    "value": "Tofacitinib"
+                },
+                {
+                    "text": "Rituximab",
+                    "value": "Rituximab"
+                },
+				{
+                    "text": "None of the above",
+                    "value": "0"
+                }
+            ],
+            "min_choices": null,
+            "max_choices": null
+        },
+		{
+            "survey_item_type": "string_single_choice_prompt",
+            "survey_item_id": "StopMeds",
+            "condition": null,
+            "display_type": "list",
+            "text": "Have you reduced or stopped any of your RA medication?",
+            "display_label": "StopMeds",
+            "skippable": false,
+            "default_response": null,
+            "choices": [
+                {
+                    "text": "No",
+                    "value": "No"
+                },
+				{
+                    "text": "Yes",
+                    "value": "Yes"
+                }
+            ]
+        },
+		{
+            "survey_item_type": "string_multi_choice_prompt",
+            "survey_item_id": "StopMedsChoices",
+            "condition": "StopMeds == \"Yes\"",
+            "display_type": "list",
+            "text": "Please check all medications you have reduced or stopped taking:",
+            "display_label": "StopMedsChoices",
+            "skippable": false,
+            "default_response": null,
+            "choices": [
+                {
+                    "text": "Methotrexate pills",
+                    "value": "Methotrexate pills"
+                },
+				{
+                    "text": "Methotrexate injection",
+                    "value": "Methotrexate injection"
+                },
+				{
+                    "text": "Hydroxychloroquine",
+                    "value": "Hydroxychloroquine"
+                },
+				{
+                    "text": "Sufasalazine",
+                    "value": "Sufasalazine"
+                },
+				{
+                    "text": "Gold",
+                    "value": "Gold"
+                },
+                {
+                    "text": "Etanercept",
+                    "value": "Etanercept"
+                },
+				{
+                    "text": "Adalimumab",
+                    "value": "Adalimumab"
+                },
+                {
+                    "text": "Certolizumab",
+                    "value": "Certolizumab"
+                },
+				{
+                    "text": "Golimumab",
+                    "value": "Golimumab"
+                },
+                {
+                    "text": "Abatacept",
+                    "value": "Abatacept"
+                },
+				{
+                    "text": "Tocilizumab",
+                    "value": "Tocilizumab"
+                },
+                {
+                    "text": "Infliximab",
+                    "value": "Infliximab"
+                },
+                {
+                    "text": "Tofacitinib",
+                    "value": "Tofacitinib"
+                },
+                {
+                    "text": "Rituximab",
+                    "value": "Rituximab"
+                },
+				{
+                    "text": "None of the above",
+                    "value": "0"
+                }
+            ],
+            "min_choices": null,
+            "max_choices": null
+        },
+		{
+            "survey_item_type": "string_single_choice_prompt",
+            "survey_item_id": "SteroidUse",
+            "condition": null,
+            "display_type": "list",
+            "text": "Have you taken or adjusted the use of steroids?",
+            "display_label": "SteroidUse",
+            "skippable": false,
+            "default_response": null,
+            "choices": [
+                {
+                    "text": "No",
+                    "value": "No"
+                },
+				{
+                    "text": "Yes",
+                    "value": "Yes"
+                }
+            ]
+        },
+		{
+            "survey_item_type": "string_multi_choice_prompt",
+            "survey_item_id": "Steroids",
+            "condition": "SteroidUse == \"Yes\"",
+            "display_type": "list",
+            "text": "Please check all steroids you have taken or adjusted:",
+            "display_label": "Infusions",
+            "skippable": false,
+            "default_response": null,
+            "choices": [
+                {
+                    "text": "Prednisone",
+                    "value": "Prednisone"
+                },
+                {
+                    "text": "Methylprednisolone",
+                    "value": "Methylprednisolone"
+                },
+				{
+                    "text": "Steroid injection",
+                    "value": "SteroidInjection"
+                }
+            ],
+            "min_choices": null,
+            "max_choices": null
+        },
+		{
+            "survey_item_type": "string_single_choice_prompt",
+            "survey_item_id": "Prednisone",
+            "condition": "Steroids == \"Prednisone\"",
+            "display_type": "list",
+            "text": "Please check how you have taken or adjusted Prednisone:",
+            "display_label": "Prednisone",
+            "skippable": false,
+            "default_response": null,
+            "choices": [
+                {
+                    "text": "Regular dose",
+                    "value": "Regular dose"
+                },
+                {
+                    "text": "Lower dose",
+                    "value": "Lower dose"
+                },
+				{
+                    "text": "Higher dose",
+                    "value": "Higher dose"
+                },
+				{
+                    "text": "Not sure",
+                    "value": "Not sure"
+                }
+            ]
+        },
+		{
+            "survey_item_type": "string_single_choice_prompt",
+            "survey_item_id": "Methylprednisolone",
+            "condition": "Steroids == \"Methylprednisolone\"",
+            "display_type": "list",
+            "text": "Please check how you have taken or adjusted Methylprednisolone:",
+            "display_label": "Methylprednisolone",
+            "skippable": false,
+            "default_response": null,
+            "choices": [
+                {
+                    "text": "Regular dose",
+                    "value": "Regular dose"
+                },
+                {
+                    "text": "Lower dose",
+                    "value": "Lower dose"
+                },
+				{
+                    "text": "Higher dose",
+                    "value": "Higher dose"
+                },
+				{
+                    "text": "Not sure",
+                    "value": "Not sure"
+                }
+            ]
+        },
+		{
+            "survey_item_type": "string_single_choice_prompt",
+            "survey_item_id": "SteroidInjection",
+            "condition": "Steroids == \"SteroidInjection\"",
+            "display_type": "list",
+            "text": "Please check how you have taken or adjusted Steroid Injection:",
+            "display_label": "SteroidInjection",
+            "skippable": false,
+            "default_response": null,
+            "choices": [
+                {
+                    "text": "Regular dose",
+                    "value": "Regular dose"
+                },
+                {
+                    "text": "Lower dose",
+                    "value": "Lower dose"
+                },
+				{
+                    "text": "Higher dose",
+                    "value": "Higher dose"
+                },
+				{
+                    "text": "Not sure",
+                    "value": "Not sure"
+                }
+            ]
+        },
+		{
+            "survey_item_type": "string_single_choice_prompt",
+            "survey_item_id": "Adherence",
+            "condition": null,
+            "display_type": "list",
+            "text": "How much of your Rheumatoid Arthritis MEDICATION did you REMEMBER to take LAST WEEK?",
+            "display_label": "MedAdherence",
+            "skippable": false,
+            "default_response": null,
+            "choices": [
+                {
+                    "text": "All of it",
+                    "value": "All of it"
+                },
+                {
+                    "text": "Most of it",
+                    "value": "Most of it"
+                },
+				{
+                    "text": "About half of it",
+                    "value": "About half of it"
+                },
+				{
+                    "text": "Very little of it",
+                    "value": "Very little of it"
+                },
+				{
+                    "text": "Forgot it completely",
+                    "value": "Forgot it completely"
+                }
+            ]
+        }
+	]
+},
+
+
+{
+    "name": "RA Weekly Flare Survey (Fri)",
+    "description": "A survey to gather information about a patient's RA flares each week",
+    "icon_id": null,
+    "survey_items": [
+		{
+            "survey_item_type": "number_single_choice_prompt",
+            "survey_item_id": "ExplainFri",
+            "condition": null,
+            "display_type": "list",
+            "text": "Answer the following questions about your Rheumatoid Arthritis for the LAST WEEK",
+            "display_label": "Survey Explanation",
+            "skippable": false,
+            "default_response": null,
+            "choices": [
+                {
+                    "text": "OK",
+                    "value": 1
+                }
+            ]
+        },
+		{
+            "survey_item_type": "number_prompt",
+            "survey_item_id": "RATodayWeekly",
+            "condition": null,
+            "display_type": "picker",
+            "text": "How is your Rheumatoid Arthritis today? (0 = Best, 10 = Worst)",
+            "display_label": "RATodayWeekly",
+            "skippable": false,
+            "default_response": null,
+            "min": 0,
+            "max": 10,
+            "whole_numbers_only": true
+        },
+		{
+            "survey_item_type": "string_single_choice_prompt",
+            "survey_item_id": "RAOverall",
+            "condition": null,
+            "display_type": "list",
+            "text": "How has your RA been overall?",
+            "display_label": "RAOverall",
+            "skippable": false,
+            "default_response": null,
+            "choices": [
+                {
+                    "text": "Much worse",
+                    "value": "Much worse"
+                },
+                {
+                    "text": "Slightly worse",
+                    "value": "Slightly worse"
+                },
+				{
+                    "text": "No different",
+                    "value": "No different"
+                },
+				{
+                    "text": "Slightly better",
+                    "value": "Slightly better"
+                },
+				{
+                    "text": "Much better",
+                    "value": "Much better"
+                }
+            ]
+        }, 
+		{
+            "survey_item_type": "number_prompt",
+            "survey_item_id": "RAPainWeekly",
+            "condition": null,
+            "display_type": "picker",
+            "text": "How much PAIN have you felt due to your RA? (0 = No Pain, 10 = Extreme Pain)",
+            "display_label": "RAPainWeekly",
+            "skippable": false,
+            "default_response": null,
+            "min": 0,
+            "max": 10,
+            "whole_numbers_only": true
+        },
+		{
+            "survey_item_type": "string_single_choice_prompt",
+            "survey_item_id": "RAFunction",
+            "condition": null,
+            "display_type": "list",
+            "text": "How much difficulty have you had with regular PHYSICAL ACTIVITIES, e.g. dressing, walking, running?",
+            "display_label": "RAFunction",
+            "skippable": false,
+            "default_response": null,
+            "choices": [
+                {
+                    "text": "No difficulty",
+                    "value": "No difficulty"
+                },
+                {
+                    "text": "A little difficulty",
+                    "value": "A little difficulty"
+                },
+				{
+                    "text": "Some difficulty",
+                    "value": "Some difficulty"
+                },
+				{
+                    "text": "Much difficulty",
+                    "value": "Much difficulty"
+                },
+				{
+                    "text": "Unable to do at all",
+                    "value": "Unable to do at all"
+                }
+            ]
+        }, 
+		{
+            "survey_item_type": "string_single_choice_prompt",
+            "survey_item_id": "RAFatigue",
+            "condition": null,
+            "display_type": "list",
+            "text": "How much FATIGUE have you felt due to your RA?",
+            "display_label": "RAFatigue",
+            "skippable": false,
+            "default_response": null,
+            "choices": [
+                {
+                    "text": "No fatigue",
+                    "value": "No fatigue"
+                },
+                {
+                    "text": "A little fatigue",
+                    "value": "A little fatigue"
+                },
+				{
+                    "text": "Some fatigue",
+                    "value": "Some fatigue"
+                },
+				{
+                    "text": "Much fatigue",
+                    "value": "Much fatigue"
+                },
+				{
+                    "text": "Extreme fatigue",
+                    "value": "Extreme fatigue"
+                }
+            ]
+        }, 
+		{
+            "survey_item_type": "string_single_choice_prompt",
+            "survey_item_id": "RAStiffness",
+            "condition": null,
+            "display_type": "list",
+            "text": "How much STIFFNESS (overall or in your joints) have you felt due to Rheumatoid Arthritis?",
+            "display_label": "RAStiffness",
+            "skippable": false,
+            "default_response": null,
+            "choices": [
+                {
+                    "text": "No stiffness",
+                    "value": "No stiffness"
+                },
+                {
+                    "text": "Mild stiffness",
+                    "value": "Mild stiffness"
+                },
+				{
+                    "text": "Moderate stiffness",
+                    "value": "Moderate stiffness"
+                },
+				{
+                    "text": "Severe stiffness",
+                    "value": "Severe stiffness"
+                },
+				{
+                    "text": "Extreme stiffness",
+                    "value": "Extreme stiffness"
+                }
+            ]
+        }, 
+		{
+            "survey_item_type": "string_single_choice_prompt",
+            "survey_item_id": "RAParticipation",
+            "condition": null,
+            "display_type": "list",
+            "text": "How much difficulty have you had PARTICIPATING in usual work / social / family activities?",
+            "display_label": "RAParticipation",
+            "skippable": false,
+            "default_response": null,
+            "choices": [
+                {
+                    "text": "No difficulty",
+                    "value": "No difficulty"
+                },
+                {
+                    "text": "A little difficulty",
+                    "value": "A little difficulty"
+                },
+				{
+                    "text": "Some difficulty",
+                    "value": "Some difficulty"
+                },
+				{
+                    "text": "Much difficulty",
+                    "value": "Much difficulty"
+                },
+				{
+                    "text": "Unable to do at all",
+                    "value": "Unable to do at all"
+                }
+            ]
+        }, 
+		{
+            "survey_item_type": "string_single_choice_prompt",
+            "survey_item_id": "RACoping",
+            "condition": null,
+            "display_type": "list",
+            "text": "How well have you COPED or managed overall with your disease?",
+            "display_label": "RACoping",
+            "skippable": false,
+            "default_response": null,
+            "choices": [
+                {
+                    "text": "Very well",
+                    "value": "Very well"
+                },
+                {
+                    "text": "Well",
+                    "value": "Well"
+                },
+				{
+                    "text": "Moderately well",
+                    "value": "Moderately well"
+                },
+				{
+                    "text": "Poorly",
+                    "value": "Poorly"
+                },
+				{
+                    "text": "Didn't cope at all",
+                    "value": "Didn't cope at all"
+                }
+            ]
+        }, 
+		{
+            "survey_item_type": "string_single_choice_prompt",
+            "survey_item_id": "RAFlare",
+            "condition": null,
+            "display_type": "list",
+            "text": "Are you currently having a flare?",
+            "display_label": "RAFlare",
+            "skippable": false,
+            "default_response": null,
+            "choices": [
+                {
+                    "text": "No",
+                    "value": "No"
+                },
+                {
+                    "text": "Yes",
+                    "value": "Yes"
+                }
+            ]
+        }, 
+		{
+            "survey_item_type": "string_single_choice_prompt",
+            "survey_item_id": "RAFlareDuration",
+            "condition": "RAFlare == \"Yes\"",
+            "display_type": "list",
+            "text": "How long has this flare been going on?",
+            "display_label": "RAFlareDuration",
+            "skippable": false,
+            "default_response": null,
+            "choices": [
+                {
+                    "text": "1-3 days",
+                    "value": "1-3"
+                },
+                {
+                    "text": "4-7 days",
+                    "value": "4-7"
+                },
+				{
+                    "text": "8-14 days",
+                    "value": "8-14"
+                },
+				{
+                    "text": ">14 days",
+                    "value": ">14"
+                }
+            ]
+        }, 
+		{
+            "survey_item_type": "number_prompt",
+            "survey_item_id": "RAFlareSeverity",
+            "condition": "RAFlare == \"Yes\"",
+            "display_type": "picker",
+            "text": "How severe is your current RA flare? (0 = No flare, 10 = Severe flare)",
+            "display_label": "RAFlareSeverity",
+            "skippable": false,
+            "default_response": null,
+            "min": 0,
+            "max": 10,
+            "whole_numbers_only": true
+        }, 
+		{
+            "survey_item_type": "string_multi_choice_prompt",
+            "survey_item_id": "RAFlareResponse",
+            "condition": "RAFlare == \"Yes\"",
+            "display_type": "list",
+            "text": "As a result of this \"flare\", what did you do? (Select all that apply)",
+            "display_label": "RAFlareResponse",
+            "skippable": false,
+            "default_response": null,
+            "choices": [
+                {
+                    "text": "Nothing different.",
+                    "value": "Nothing"
+                },
+                {
+                    "text": "Rested more.",
+                    "value": "Rested"
+                },
+				{
+                    "text": "Avoided planned activities.",
+                    "value": "Avoided"
+                },
+				{
+                    "text": "Had a massage.",
+                    "value": "Massage"
+                },
+				{
+                    "text": "Had physical therapy.",
+                    "value": "PT"
+                },
+				{
+                    "text": "Used hot/cold packs.",
+                    "value": "Hot/cold"
+                },
+				{
+                    "text": "Exercised.",
+                    "value": "Exercise"
+                },
+				{
+                    "text": "Took more pain medications.",
+                    "value": "Meds"
+                },
+				{
+                    "text": "Took more steroid tablets.",
+                    "value": "Steroids"
+                },
+				{
+                    "text": "Spoke to my Rheumatology nurse / doctor.",
+                    "value": "Rheumatologist"
+                }
+            ],
+            "min_choices": null,
+            "max_choices": null
+        },             
+		{
+            "survey_item_type": "string_single_choice_prompt",
+            "survey_item_id": "JointPain",
+            "condition": null,
+            "display_type": "list",
+            "text": "Do you have pain / tenderness in your joints?",
+            "display_label": "JointPain",
+            "skippable": false,
+            "default_response": null,
+            "choices": [
+                {
+                    "text": "No",
+                    "value": "No"
+                },
+                {
+                    "text": "Yes",
+                    "value": "Yes"
+                }
+            ]
+        }, 
+		{
+            "survey_item_type": "string_multi_choice_prompt",
+            "survey_item_id": "PainLoc",
+            "condition": "JointPain == \"Yes\"",
+            "display_type": "list",
+            "text": "Select which joints:",
+            "display_label": "JointPainLocation",
+            "skippable": false,
+            "default_response": null,
+            "choices": [
+                {
+                    "text": "Hand / Fingers",
+                    "value": "Hand"
+                },
+                {
+                    "text": "Wrist",
+                    "value": "Wrist"
+                },
+				{
+                    "text": "Elbow",
+                    "value": "Elbow"
+                },
+				{
+                    "text": "Shoulder",
+                    "value": "Shoulder"
+                },
+				{
+                    "text": "Hip",
+                    "value": "Hip"
+                },
+				{
+                    "text": "Knee",
+                    "value": "Knee"
+                },
+				{
+                    "text": "Ankle",
+                    "value": "Ankle"
+                },
+				{
+                    "text": "Foot / Toes",
+                    "value": "Foot"
+                }
+            ],
+            "min_choices": null,
+            "max_choices": null
+        },             
+		{
+            "survey_item_type": "string_multi_choice_prompt",
+            "survey_item_id": "HandSide",
+            "condition": "PainLoc == \"Hand\"",
+            "display_type": "list",
+            "text": "Which side is your HAND pain?",
+            "display_label": "HandSide",
+            "skippable": false,
+            "default_response": null,
+            "choices": [
+                {
+                    "text": "Left",
+                    "value": "Left"
+                },
+                {
+                    "text": "Right",
+                    "value": "Right"
+                }
+            ],
+            "min_choices": null,
+            "max_choices": null
+        }, 
+		{
+            "survey_item_type": "string_single_choice_prompt",
+            "survey_item_id": "LeftHand",
+            "condition": "HandSide == \"Left\"",
+            "display_type": "list",
+            "text": "How severe is the pain in your LEFT hand?",
+            "display_label": "LeftHand",
+            "skippable": false,
+            "default_response": null,
+            "choices": [
+                {
+                    "text": "Mild",
+                    "value": "Mild"
+                },
+                {
+                    "text": "Moderate",
+                    "value": "Moderate"
+                },
+				{
+                    "text": "Severe",
+                    "value": "Severe"
+                }
+            ]
+        }, 
+		{
+            "survey_item_type": "string_single_choice_prompt",
+            "survey_item_id": "RightHand",
+            "condition": "HandSide == \"Right\"",
+            "display_type": "list",
+            "text": "How severe is the pain in your RIGHT hand?",
+            "display_label": "RightHand",
+            "skippable": false,
+            "default_response": null,
+            "choices": [
+                {
+                    "text": "Mild",
+                    "value": "Mild"
+                },
+                {
+                    "text": "Moderate",
+                    "value": "Moderate"
+                },
+				{
+                    "text": "Severe",
+                    "value": "Severe"
+                }
+            ]
+        }, 
+		{
+            "survey_item_type": "string_multi_choice_prompt",
+            "survey_item_id": "WristSide",
+            "condition": "PainLoc == \"Wrist\"",
+            "display_type": "list",
+            "text": "Which side is your WRIST pain?",
+            "display_label": "WristSide",
+            "skippable": false,
+            "default_response": null,
+            "choices": [
+                {
+                    "text": "Left",
+                    "value": "Left"
+                },
+                {
+                    "text": "Right",
+                    "value": "Right"
+                }
+            ],
+            "min_choices": null,
+            "max_choices": null
+        }, 
+		{
+            "survey_item_type": "string_single_choice_prompt",
+            "survey_item_id": "LeftWrist",
+            "condition": "WristSide == \"Left\"",
+            "display_type": "list",
+            "text": "How severe is the pain in your LEFT wrist?",
+            "display_label": "LeftWrist",
+            "skippable": false,
+            "default_response": null,
+            "choices": [
+                {
+                    "text": "Mild",
+                    "value": "Mild"
+                },
+                {
+                    "text": "Moderate",
+                    "value": "Moderate"
+                },
+				{
+                    "text": "Severe",
+                    "value": "Severe"
+                }
+            ]
+        }, 
+		{
+            "survey_item_type": "string_single_choice_prompt",
+            "survey_item_id": "RightWrist",
+            "condition": "WristSide == \"Right\"",
+            "display_type": "list",
+            "text": "How severe is the pain in your RIGHT wrist?",
+            "display_label": "RightWrist",
+            "skippable": false,
+            "default_response": null,
+            "choices": [
+                {
+                    "text": "Mild",
+                    "value": "Mild"
+                },
+                {
+                    "text": "Moderate",
+                    "value": "Moderate"
+                },
+				{
+                    "text": "Severe",
+                    "value": "Severe"
+                }
+            ]
+        }, 
+		{
+            "survey_item_type": "string_multi_choice_prompt",
+            "survey_item_id": "ElbowSide",
+            "condition": "PainLoc == \"Elbow\"",
+            "display_type": "list",
+            "text": "Which side is your ELBOW pain?",
+            "display_label": "ElbowSide",
+            "skippable": false,
+            "default_response": null,
+            "choices": [
+                {
+                    "text": "Left",
+                    "value": "Left"
+                },
+                {
+                    "text": "Right",
+                    "value": "Right"
+                }
+            ],
+            "min_choices": null,
+            "max_choices": null
+        }, 
+		{
+            "survey_item_type": "string_single_choice_prompt",
+            "survey_item_id": "LeftElbow",
+            "condition": "ElbowSide == \"Left\"",
+            "display_type": "list",
+            "text": "How severe is the pain in your LEFT elbow?",
+            "display_label": "LeftElbow",
+            "skippable": false,
+            "default_response": null,
+            "choices": [
+                {
+                    "text": "Mild",
+                    "value": "Mild"
+                },
+                {
+                    "text": "Moderate",
+                    "value": "Moderate"
+                },
+				{
+                    "text": "Severe",
+                    "value": "Severe"
+                }
+            ]
+        }, 
+		{
+            "survey_item_type": "string_single_choice_prompt",
+            "survey_item_id": "RightElbow",
+            "condition": "ElbowSide == \"Right\"",
+            "display_type": "list",
+            "text": "How severe is the pain in your RIGHT elbow?",
+            "display_label": "RightElbow",
+            "skippable": false,
+            "default_response": null,
+            "choices": [
+                {
+                    "text": "Mild",
+                    "value": "Mild"
+                },
+                {
+                    "text": "Moderate",
+                    "value": "Moderate"
+                },
+				{
+                    "text": "Severe",
+                    "value": "Severe"
+                }
+            ]
+        }, 
+		{
+            "survey_item_type": "string_multi_choice_prompt",
+            "survey_item_id": "ShoulderSide",
+            "condition": "PainLoc == \"Shoulder\"",
+            "display_type": "list",
+            "text": "Which side is your SHOULDER pain?",
+            "display_label": "ShoulderSide",
+            "skippable": false,
+            "default_response": null,
+            "choices": [
+                {
+                    "text": "Left",
+                    "value": "Left"
+                },
+                {
+                    "text": "Right",
+                    "value": "Right"
+                }
+            ],
+            "min_choices": null,
+            "max_choices": null
+        }, 
+		{
+            "survey_item_type": "string_single_choice_prompt",
+            "survey_item_id": "LeftShoulder",
+            "condition": "ShoulderSide == \"Left\"",
+            "display_type": "list",
+            "text": "How severe is the pain in your LEFT shoulder?",
+            "display_label": "LeftShoulder",
+            "skippable": false,
+            "default_response": null,
+            "choices": [
+                {
+                    "text": "Mild",
+                    "value": "Mild"
+                },
+                {
+                    "text": "Moderate",
+                    "value": "Moderate"
+                },
+				{
+                    "text": "Severe",
+                    "value": "Severe"
+                }
+            ]
+        }, 
+		{
+            "survey_item_type": "string_single_choice_prompt",
+            "survey_item_id": "RightShoulder",
+            "condition": "ShoulderSide == \"Right\"",
+            "display_type": "list",
+            "text": "How severe is the pain in your RIGHT shoulder?",
+            "display_label": "RightShoulder",
+            "skippable": false,
+            "default_response": null,
+            "choices": [
+                {
+                    "text": "Mild",
+                    "value": "Mild"
+                },
+                {
+                    "text": "Moderate",
+                    "value": "Moderate"
+                },
+				{
+                    "text": "Severe",
+                    "value": "Severe"
+                }
+            ]
+        }, 
+		{
+            "survey_item_type": "string_multi_choice_prompt",
+            "survey_item_id": "HipSide",
+            "condition": "PainLoc == \"Hip\"",
+            "display_type": "list",
+            "text": "Which side is your HIP pain?",
+            "display_label": "HipSide",
+            "skippable": false,
+            "default_response": null,
+            "choices": [
+                {
+                    "text": "Left",
+                    "value": "Left"
+                },
+                {
+                    "text": "Right",
+                    "value": "Right"
+                }
+            ],
+            "min_choices": null,
+            "max_choices": null
+        }, 
+		{
+            "survey_item_type": "string_single_choice_prompt",
+            "survey_item_id": "LeftHip",
+            "condition": "HipSide == \"Left\"",
+            "display_type": "list",
+            "text": "How severe is the pain in your LEFT hip?",
+            "display_label": "LeftHip",
+            "skippable": false,
+            "default_response": null,
+            "choices": [
+                {
+                    "text": "Mild",
+                    "value": "Mild"
+                },
+                {
+                    "text": "Moderate",
+                    "value": "Moderate"
+                },
+				{
+                    "text": "Severe",
+                    "value": "Severe"
+                }
+            ]
+        }, 
+		{
+            "survey_item_type": "string_single_choice_prompt",
+            "survey_item_id": "RightHip",
+            "condition": "HipSide == \"Right\"",
+            "display_type": "list",
+            "text": "How severe is the pain in your RIGHT hip?",
+            "display_label": "RightHip",
+            "skippable": false,
+            "default_response": null,
+            "choices": [
+                {
+                    "text": "Mild",
+                    "value": "Mild"
+                },
+                {
+                    "text": "Moderate",
+                    "value": "Moderate"
+                },
+				{
+                    "text": "Severe",
+                    "value": "Severe"
+                }
+            ]
+        }, 	
+		{
+            "survey_item_type": "string_multi_choice_prompt",
+            "survey_item_id": "KneeSide",
+            "condition": "PainLoc == \"Knee\"",
+            "display_type": "list",
+            "text": "Which side is your KNEE pain?",
+            "display_label": "KneeSide",
+            "skippable": false,
+            "default_response": null,
+            "choices": [
+                {
+                    "text": "Left",
+                    "value": "Left"
+                },
+                {
+                    "text": "Right",
+                    "value": "Right"
+                }
+            ],
+            "min_choices": null,
+            "max_choices": null
+        }, 
+		{
+            "survey_item_type": "string_single_choice_prompt",
+            "survey_item_id": "LeftKnee",
+            "condition": "KneeSide == \"Left\"",
+            "display_type": "list",
+            "text": "How severe is the pain in your LEFT knee?",
+            "display_label": "LeftKnee",
+            "skippable": false,
+            "default_response": null,
+            "choices": [
+                {
+                    "text": "Mild",
+                    "value": "Mild"
+                },
+                {
+                    "text": "Moderate",
+                    "value": "Moderate"
+                },
+				{
+                    "text": "Severe",
+                    "value": "Severe"
+                }
+            ]
+        }, 
+		{
+            "survey_item_type": "string_single_choice_prompt",
+            "survey_item_id": "RightKnee",
+            "condition": "KneeSide == \"Right\"",
+            "display_type": "list",
+            "text": "How severe is the pain in your RIGHT knee?",
+            "display_label": "RightKnee",
+            "skippable": false,
+            "default_response": null,
+            "choices": [
+                {
+                    "text": "Mild",
+                    "value": "Mild"
+                },
+                {
+                    "text": "Moderate",
+                    "value": "Moderate"
+                },
+				{
+                    "text": "Severe",
+                    "value": "Severe"
+                }
+            ]
+        }, 
+		{
+            "survey_item_type": "string_multi_choice_prompt",
+            "survey_item_id": "AnkleSide",
+            "condition": "PainLoc == \"Ankle\"",
+            "display_type": "list",
+            "text": "Which side is your ANKLE pain?",
+            "display_label": "AnkleSide",
+            "skippable": false,
+            "default_response": null,
+            "choices": [
+                {
+                    "text": "Left",
+                    "value": "Left"
+                },
+                {
+                    "text": "Right",
+                    "value": "Right"
+                }
+            ],
+            "min_choices": null,
+            "max_choices": null
+        }, 
+		{
+            "survey_item_type": "string_single_choice_prompt",
+            "survey_item_id": "LeftAnkle",
+            "condition": "AnkleSide == \"Left\"",
+            "display_type": "list",
+            "text": "How severe is the pain in your LEFT ankle?",
+            "display_label": "LeftAnkle",
+            "skippable": false,
+            "default_response": null,
+            "choices": [
+                {
+                    "text": "Mild",
+                    "value": "Mild"
+                },
+                {
+                    "text": "Moderate",
+                    "value": "Moderate"
+                },
+				{
+                    "text": "Severe",
+                    "value": "Severe"
+                }
+            ]
+        }, 
+		{
+            "survey_item_type": "string_single_choice_prompt",
+            "survey_item_id": "RightAnkle",
+            "condition": "AnkleSide == \"Right\"",
+            "display_type": "list",
+            "text": "How severe is the pain in your RIGHT ankle?",
+            "display_label": "RightAnkle",
+            "skippable": false,
+            "default_response": null,
+            "choices": [
+                {
+                    "text": "Mild",
+                    "value": "Mild"
+                },
+                {
+                    "text": "Moderate",
+                    "value": "Moderate"
+                },
+				{
+                    "text": "Severe",
+                    "value": "Severe"
+                }
+            ]
+        }, 	
+		{
+            "survey_item_type": "string_multi_choice_prompt",
+            "survey_item_id": "FootSide",
+            "condition": "PainLoc == \"Foot\"",
+            "display_type": "list",
+            "text": "Which side is your FOOT pain?",
+            "display_label": "FootSide",
+            "skippable": false,
+            "default_response": null,
+            "choices": [
+                {
+                    "text": "Left",
+                    "value": "Left"
+                },
+                {
+                    "text": "Right",
+                    "value": "Right"
+                }
+            ],
+            "min_choices": null,
+            "max_choices": null
+        }, 
+		{
+            "survey_item_type": "string_single_choice_prompt",
+            "survey_item_id": "LeftFoot",
+            "condition": "FootSide == \"Left\"",
+            "display_type": "list",
+            "text": "How severe is the pain in your LEFT foot?",
+            "display_label": "LeftFoot",
+            "skippable": false,
+            "default_response": null,
+            "choices": [
+                {
+                    "text": "Mild",
+                    "value": "Mild"
+                },
+                {
+                    "text": "Moderate",
+                    "value": "Moderate"
+                },
+				{
+                    "text": "Severe",
+                    "value": "Severe"
+                }
+            ]
+        }, 
+		{
+            "survey_item_type": "string_single_choice_prompt",
+            "survey_item_id": "RightFoot",
+            "condition": "FootSide == \"Right\"",
+            "display_type": "list",
+            "text": "How severe is the pain in your RIGHT foot?",
+            "display_label": "RightFoot",
+            "skippable": false,
+            "default_response": null,
+            "choices": [
+                {
+                    "text": "Mild",
+                    "value": "Mild"
+                },
+                {
+                    "text": "Moderate",
+                    "value": "Moderate"
+                },
+				{
+                    "text": "Severe",
+                    "value": "Severe"
+                }
+            ]
+        }
+	]
+}
+
+{
+    "name": "RA Weekly Activity Survey (Sat)",
+    "description": "A survey to gather information about a patient's ability to perform activities each week",
+    "icon_id": null,
+    "survey_items": [
+		{
+		    "survey_item_type": "number_single_choice_prompt",
+            "survey_item_id": "ExplainSat",
+            "condition": null,
+            "display_type": "list",
+            "text": "During the LAST WEEK, how much difficulty did you have doing the following activities:",
+            "display_label": "Survey Explanation",
+            "skippable": false,
+            "default_response": null,
+            "choices": [
+                {
+                    "text": "OK",
+                    "value": 1
+                }
+            ]
+        },
+		{
+            "survey_item_type": "string_single_choice_prompt",
+            "survey_item_id": "RADress",
+            "condition": null,
+            "display_type": "list",
+            "text": "Getting dressed (doing buttons, shoelaces, etc)",
+            "display_label": "RADress",
+            "skippable": false,
+            "default_response": null,
+            "choices": [
+                {
+                    "text": "No difficulty",
+                    "value": "No difficulty"
+                },
+                {
+                    "text": "A little difficulty",
+                    "value": "A little difficulty"
+                },
+				{
+                    "text": "Some difficulty",
+                    "value": "Some difficulty"
+                },
+				{
+                    "text": "Much difficulty",
+                    "value": "Much difficulty"
+                },
+				{
+                    "text": "Unable to do at all",
+                    "value": "Unable to do at all"
+                }
+            ]
+        }, 
+		{
+            "survey_item_type": "string_single_choice_prompt",
+            "survey_item_id": "RABed",
+            "condition": null,
+            "display_type": "list",
+            "text": "Getting in or out of bed",
+            "display_label": "RABed",
+            "skippable": false,
+            "default_response": null,
+            "choices": [
+                {
+                    "text": "No difficulty",
+                    "value": "No difficulty"
+                },
+                {
+                    "text": "A little difficulty",
+                    "value": "A little difficulty"
+                },
+				{
+                    "text": "Some difficulty",
+                    "value": "Some difficulty"
+                },
+				{
+                    "text": "Much difficulty",
+                    "value": "Much difficulty"
+                },
+				{
+                    "text": "Unable to do at all",
+                    "value": "Unable to do at all"
+                }
+            ]
+        }, 	
+		{
+            "survey_item_type": "string_single_choice_prompt",
+            "survey_item_id": "RACup",
+            "condition": null,
+            "display_type": "list",
+            "text": "Lifting a cup of water to your mouth",
+            "display_label": "RACup",
+            "skippable": false,
+            "default_response": null,
+            "choices": [
+                {
+                    "text": "No difficulty",
+                    "value": "No difficulty"
+                },
+                {
+                    "text": "A little difficulty",
+                    "value": "A little difficulty"
+                },
+				{
+                    "text": "Some difficulty",
+                    "value": "Some difficulty"
+                },
+				{
+                    "text": "Much difficulty",
+                    "value": "Much difficulty"
+                },
+				{
+                    "text": "Unable to do at all",
+                    "value": "Unable to do at all"
+                }
+            ]
+        }, 
+		{
+            "survey_item_type": "string_single_choice_prompt",
+            "survey_item_id": "RAWalk",
+            "condition": null,
+            "display_type": "list",
+            "text": "Walking on flat ground",
+            "display_label": "RAWalk",
+            "skippable": false,
+            "default_response": null,
+            "choices": [
+                {
+                    "text": "No difficulty",
+                    "value": "No difficulty"
+                },
+                {
+                    "text": "A little difficulty",
+                    "value": "A little difficulty"
+                },
+				{
+                    "text": "Some difficulty",
+                    "value": "Some difficulty"
+                },
+				{
+                    "text": "Much difficulty",
+                    "value": "Much difficulty"
+                },
+				{
+                    "text": "Unable to do at all",
+                    "value": "Unable to do at all"
+                }
+            ]
+        },
+		{
+            "survey_item_type": "string_single_choice_prompt",
+            "survey_item_id": "RAWash",
+            "condition": null,
+            "display_type": "list",
+            "text": "Showering / bathing / drying your entire body",
+            "display_label": "RAWash",
+            "skippable": false,
+            "default_response": null,
+            "choices": [
+                {
+                    "text": "No difficulty",
+                    "value": "No difficulty"
+                },
+                {
+                    "text": "A little difficulty",
+                    "value": "A little difficulty"
+                },
+				{
+                    "text": "Some difficulty",
+                    "value": "Some difficulty"
+                },
+				{
+                    "text": "Much difficulty",
+                    "value": "Much difficulty"
+                },
+				{
+                    "text": "Unable to do at all",
+                    "value": "Unable to do at all"
+                }
+            ]
+        }, 
+		{
+            "survey_item_type": "string_single_choice_prompt",
+            "survey_item_id": "RABend",
+            "condition": null,
+            "display_type": "list",
+            "text": "Bending down to pick up objects",
+            "display_label": "RABend",
+            "skippable": false,
+            "default_response": null,
+            "choices": [
+                {
+                    "text": "No difficulty",
+                    "value": "No difficulty"
+                },
+                {
+                    "text": "A little difficulty",
+                    "value": "A little difficulty"
+                },
+				{
+                    "text": "Some difficulty",
+                    "value": "Some difficulty"
+                },
+				{
+                    "text": "Much difficulty",
+                    "value": "Much difficulty"
+                },
+				{
+                    "text": "Unable to do at all",
+                    "value": "Unable to do at all"
+                }
+            ]
+        },  
+		{
+            "survey_item_type": "string_single_choice_prompt",
+            "survey_item_id": "RAFaucet",
+            "condition": null,
+            "display_type": "list",
+            "text": "Turning a faucet on / off",
+            "display_label": "RAFaucet",
+            "skippable": false,
+            "default_response": null,
+            "choices": [
+                {
+                    "text": "No difficulty",
+                    "value": "No difficulty"
+                },
+                {
+                    "text": "A little difficulty",
+                    "value": "A little difficulty"
+                },
+				{
+                    "text": "Some difficulty",
+                    "value": "Some difficulty"
+                },
+				{
+                    "text": "Much difficulty",
+                    "value": "Much difficulty"
+                },
+				{
+                    "text": "Unable to do at all",
+                    "value": "Unable to do at all"
+                }
+            ]
+        }, 
+		{
+            "survey_item_type": "string_single_choice_prompt",
+            "survey_item_id": "RATransport",
+            "condition": null,
+            "display_type": "list",
+            "text": "Getting in and out of a car / bus",
+            "display_label": "RATransport",
+            "skippable": false,
+            "default_response": null,
+            "choices": [
+                {
+                    "text": "No difficulty",
+                    "value": "No difficulty"
+                },
+                {
+                    "text": "A little difficulty",
+                    "value": "A little difficulty"
+                },
+				{
+                    "text": "Some difficulty",
+                    "value": "Some difficulty"
+                },
+				{
+                    "text": "Much difficulty",
+                    "value": "Much difficulty"
+                },
+				{
+                    "text": "Unable to do at all",
+                    "value": "Unable to do at all"
+                }
+            ]
+        }
+	]
+}
