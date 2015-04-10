@@ -1,0 +1,339 @@
+{   
+    "name": "Colectomy Stoma",
+    "description": "A survey to gather information about a patient\u0027s experience after a colectomy.",
+    "schema_id": {
+        "name" : "heatherYeo", 
+        "namespace" : "heather-yeo-colectomy-stoma-survey", 
+        "version" : {
+            "major" : 1, 
+            "minor" : 0
+        }
+    }, 
+
+    "survey_items": [
+		{
+            "survey_item_type": "number_prompt",
+            "survey_item_id": "painLevel",
+            "condition": null,
+            "display_type": "picker",
+            "text": "Indicate your pain level [0 no pain - 10 worst pain]",
+            "display_label": "Pain Level",
+            "skippable": false,
+            "default_response": null,
+            "min": 0,
+            "max": 10,
+            "whole_numbers_only": true
+        	},
+
+		{
+            "survey_item_type": "number_prompt",
+            "survey_item_id": "InterfereGenAct",
+            "condition": null,
+            "display_type": "picker",  
+            "text": "How much does your pain interfere with general activity [0 Does not interfere - 10 Completely interferes]?",
+            "display_label": "General Activity",
+            "skippable": false,
+            "default_response": null,
+            "min": 0,
+            "max": 10,
+            "whole_numbers_only": true
+        	},
+
+		{
+            "survey_item_type": "number_prompt",
+            "survey_item_id": "InterfereRelations",
+            "condition": null,
+            "display_type": "picker",
+            "text": "How much does your pain interfere with your relations with others [0 Does not interfere - 10 Completely interferes]?",
+            "display_label": "Relations",
+            "skippable": false,
+            "default_response": null,
+            "min": 0,
+            "max": 10,
+            "whole_numbers_only": true
+        	},
+
+		{
+            "survey_item_type": "number_prompt",
+            "survey_item_id": "InterfereSleep",
+            "condition": null,
+            "display_type": "picker",
+            "text": "How much does your pain interfere with your sleep [0 Does not interfere - 10 Completely interferes]?",
+            "display_label": "Sleep",
+            "skippable": false,
+            "default_response": null,
+            "min": 0,
+            "max": 10,
+            "whole_numbers_only": true
+        	},
+
+        {
+            "survey_item_type" : "string_multi_choice_prompt", 
+            "survey_item_id" : "Symptoms",
+            "condition": null, 
+            "display_type": "list", 
+            "text": "Please check any symptoms below that you have had in the last 24 hours (select all apply).", 
+            "skippable": false, 
+            "display_label" : "Symptoms",
+            "default_response": null, 
+            "choices": [
+                {
+                    "text" : "Dry mouth", 
+                    "value" : "Dry mouth"
+                }, 
+
+                {
+                    "text" : "Dark urine",
+                    "value" : "Dark urine" 
+                }, 
+
+                {
+                    "text" : "Decreased energy", 
+                    "value" : "Decreased energy"
+                },
+
+                {
+                    "text" : "Nausea", 
+                    "value" : "Nausea"
+                }, 
+
+                {
+                    "text" : "None of the above", 
+                    "value" : "None"
+                }
+            ]
+        }, 
+
+	   {
+            "survey_item_type": "number_single_choice_prompt",
+            "survey_item_id": "Vomiting",
+            "condition": null,
+            "display_type": "list",
+            "text": "Have you experienced any vomiting over the course of the last day?",
+            "display_label": "Vomiting",
+            "skippable": false,
+            "default_response": null,
+            "choices": [
+                {
+                    "text": "Yes",
+                    "value": 1
+                },
+                
+                {
+                    "text": "No",
+                    "value": 0
+                }
+            ]
+        },
+
+        {
+            "survey_item_type": "number_single_choice_prompt",
+            "survey_item_id": "ProviderContactDarkUrine",
+            "condition": "Vomiting == 1",
+            "display_type": "list",
+            "text": "Your response to the previous question was outside of normal values. While there may not be a medical emergency, we recommend you contact your provider to discuss your response at (212) 746-6030.",
+            "display_label": "ProviderContact",
+            "skippable": false,
+            "default_response": null,
+            "choices": [
+                {
+                    "text": "I have contacted my provider.",
+                    "value": 1
+                }
+            ]
+        },
+
+        {
+            "survey_item_type": "number_single_choice_prompt",
+            "survey_item_id": "MealPercent",
+            "condition": null, 
+            "display_type": "list",
+            "text": "On average, what percent of your meals have you been eating over the last day?",
+            "display_label": "Percentage of the Meal",
+            "skippable": false,
+            "default_response": null,
+            "choices": [
+                {
+                    "text": "0-25%",
+                    "value": 1
+                },
+                {
+                    "text": "25-50%",
+                    "value": 2
+                },
+                {
+                    "text": "50-75%",
+                    "value": 3
+                },
+                {
+                    "text": "75-100%",
+                    "value": 4
+                }
+            ]
+        },
+
+        {
+            "survey_item_type": "number_single_choice_prompt",
+            "survey_item_id": "ProviderContactMealPercent",
+            "condition": "MealPercent == 1",
+            "display_type": "list",
+            "text": "Your response to the previous question was outside of normal values. While there may not be a medical emergency, we recommend you contact your provider to discuss your response at (212) 746-6030.",
+            "display_label": "ProviderContact",
+            "skippable": false,
+            "default_response": null,
+            "choices": [
+                {
+                    "text": "I have contacted my provider.",
+                    "value": 1
+                }
+            ]
+        },
+
+        {
+            "survey_item_type": "string_multi_choice_prompt",
+            "survey_item_id": "MealPercentReason",
+            "condition": "MealPercent == 1 OR 2 ",
+            "display_type": "list",
+            "text": "What is the main reason you haven\u0027t been eating all of your meals?",
+            "display_label": "MealPercentReason",
+            "skippable": false,
+            "default_response": null,
+            "choices": [
+                {
+                    "text": "Not hungry",
+                    "value": "Not hungry"
+                },
+                {
+                    "text": "Pain",
+                    "value": "Pain"
+                },
+                {
+                    "text": "Nausea or vomiting",
+                    "value": "Nausea or vomiting"
+                },
+                {
+                    "text": "Didn\u0027t feel like it",
+                    "value": "Didn\u0027t feel like it"
+                }
+            ],
+            "min_choices": null,
+            "max_choices": null
+        },
+
+        {
+            "survey_item_type": "number_prompt",
+            "survey_item_id": "LiquidIntake",
+            "condition": null,
+            "display_type": "picker",
+            "text": "What is the approximate amount (in cups) of your liquid intake over the last day (juice, water, coffee, tea, etc.)?",
+            "display_label": "LiquidIntake",
+            "skippable": false,
+            "default_response": null,
+            "min": 0,
+            "max": 20,
+            "whole_numbers_only": true
+        },
+
+        {
+            "survey_item_type": "string_multi_choice_prompt",
+            "survey_item_id": "ColIl",
+            "condition": null,
+            "display_type": "list",
+            "text": "Do you have a colostomy or ileostomy?",
+            "display_label": "Colostomy or Ileostomy",
+            "skippable": false,
+            "default_response": null,
+            "choices": [
+                {
+                    "text": "Colostomy",
+                    "value": "Colostomy"
+                },
+                {
+                    "text": "Ileostomy",
+                    "value": "Ileostomy"
+                }
+            ]
+        }, 
+
+        {
+            "survey_item_type": "string_single_choice_prompt",
+            "survey_item_id": "OstomyOutput",
+            "condition": "ColIl == \"Colostomy\"",
+            "display_type": "list",
+            "text": "Please describe your ostomy output over the last day:",
+            "display_label": "Ostomy Output",
+            "skippable": false,
+            "default_response": null,
+            "choices": [
+                {
+                    "text": "I have had no ostomy output",
+                    "value": "None"
+                },
+                {
+                    "text": "The ostomy output has been watery",
+                    "value": "Watery"
+                },
+                {
+                    "text": "The ostomy output is normal",
+                    "value": "Normal"
+                },
+                {
+                    "text": "The ostomy output is hard",
+                    "value": "Hard"
+                }
+            ]
+        },
+
+        {
+            "survey_item_type": "number_single_choice_prompt",
+            "survey_item_id": "ProviderContactOstomy",
+            "condition": "OstomyOutput == \"None\"",
+            "display_type": "list",
+            "text": "Your response to the previous question was outside of normal values. While there may not be a medical emergency, we recommend you contact your provider to discuss your response at (212) 746-6030.",
+            "display_label": "ProviderContact",
+            "skippable": false,
+            "default_response": null,
+            "choices": [
+                {
+                    "text": "I have contacted my provider.",
+                    "value": 1
+                }
+            ]
+        },
+
+        {
+            "survey_item_type": "string_single_choice_prompt",
+            "survey_item_id": "IleostomyOutput",
+            "condition": null,
+            "display_type": "list",
+            "text": "What is your stoma output over the last day (in mL)?",
+            "display_label": "Ileostomy Output",
+            "skippable": false,
+            "default_response": null,
+            "choices": [
+                {
+                    "text": "0-100 mL",
+                    "value": "Low"
+                },
+    
+                {
+                    "text": "101-1200 mL",
+                    "value": "101-1200"
+                },
+
+                {
+                    "text": ">1200 mL",
+                    "value": "High"
+                }
+            ]
+        },
+
+        {
+            "survey_item_type": "message", 
+            "survey_item_id": "UsePam", 
+            "condition": null,
+            "text": "Please turn on PAM and do the survey after submitting this survey."
+        }
+    ]
+}
+

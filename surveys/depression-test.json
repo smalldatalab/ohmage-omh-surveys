@@ -1,0 +1,279 @@
+{
+  "name": "Depression Test",
+  "description": "Patient Health Questionnaire PHQ 9",
+  "schema_id": {
+    "namespace": "cs5555",
+    "name": "cs5555-depression-survey-2",
+    "version": "1.0"
+  },
+  "survey_items": [
+  {
+            "survey_item_type": "timestamp_prompt",
+            "survey_item_id": "myTimestamp",
+            "condition": null,
+            "display_type": "picker",
+            "text": "Choose a date and time.",
+            "display_label": "Timestamp",
+            "skippable": false,
+            "default_response": null
+        },
+    {
+      "survey_item_type": "message",
+      "survey_item_id": "myMessage",
+      "condition": null,
+      "text": "Enter any significant feelings or emotions"
+    },
+    {
+      "survey_item_type": "number_single_choice_prompt",
+      "survey_item_id": "interest",
+      "condition": null,
+      "display_type": "list",
+      "text": "Little interest in doing things",
+      "display_label": "Little interest in doing things",
+      "skippable": false,
+      "default_response": null,
+      "choices": [
+        {
+          "text": "Not at all",
+          "value": 0
+        },
+        {
+          "text": "Sometimes",
+          "value": 1
+        },
+        {
+          "text": "Frequently",
+          "value": 2
+        },
+        {
+          "text": "All the time",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "survey_item_type": "number_single_choice_prompt",
+      "survey_item_id": "depressed",
+      "condition": null,
+      "display_type": "list",
+      "text": "Feeling down depressed or hopeless",
+      "display_label": "Feeling down depressed or hopeless",
+      "skippable": false,
+      "default_response": null,
+      "choices": [
+        {
+          "text": "Not at all",
+          "value": 0
+        },
+        {
+          "text": "Sometimes",
+          "value": 1
+        },
+        {
+          "text": "Frequently",
+          "value": 2
+        },
+        {
+          "text": "All the time",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "survey_item_type": "number_single_choice_prompt",
+      "survey_item_id": "sleep",
+      "condition": null,
+      "display_type": "list",
+      "text": "Trouble falling or staying asleep or sleeping too much",
+      "display_label": "Trouble falling or staying asleep or sleeping too much",
+      "skippable": false,
+      "default_response": null,
+      "choices": [
+        {
+          "text": "Not at all",
+          "value": 0
+        },
+        {
+          "text": "Sometimes",
+          "value": 1
+        },
+        {
+          "text": "Frequently",
+          "value": 2
+        },
+        {
+          "text": "All the time",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "survey_item_type": "number_single_choice_prompt",
+      "survey_item_id": "energy",
+      "condition": null,
+      "display_type": "list",
+      "text": "Feeling tired or having little energy",
+      "display_label": "Feeling tired or having little energy",
+      "skippable": false,
+      "default_response": null,
+      "choices": [
+        {
+          "text": "Not at all",
+          "value": 0
+        },
+        {
+          "text": "Sometimes",
+          "value": 1
+        },
+        {
+          "text": "Frequently",
+          "value": 2
+        },
+        {
+          "text": "All the time",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "survey_item_type": "number_single_choice_prompt",
+      "survey_item_id": "appetite",
+      "condition": null,
+      "display_type": "list",
+      "text": "Poor appetite or overeating",
+      "display_label": "Poor appetite or overeating",
+      "skippable": false,
+      "default_response": null,
+      "choices": [
+        {
+          "text": "Not at all",
+          "value": 0
+        },
+        {
+          "text": "Sometimes",
+          "value": 1
+        },
+        {
+          "text": "Frequently",
+          "value": 2
+        },
+        {
+          "text": "All the time",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "survey_item_type": "number_single_choice_prompt",
+      "survey_item_id": "failure",
+      "condition": null,
+      "display_type": "list",
+      "text": "Feeling bad about yourself - like you are a failure",
+      "display_label": "Feeling bad about yourself - like you are a failure",
+      "skippable": false,
+      "default_response": null,
+      "choices": [
+        {
+          "text": "Not at all",
+          "value": 0
+        },
+        {
+          "text": "Sometimes",
+          "value": 1
+        },
+        {
+          "text": "Frequently",
+          "value": 2
+        },
+        {
+          "text": "All the time",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "survey_item_type": "number_single_choice_prompt",
+      "survey_item_id": "concentration",
+      "condition": null,
+      "display_type": "list",
+      "text": "Trouble concentrating on things",
+      "display_label": "Trouble concentrating on things",
+      "skippable": false,
+      "default_response": null,
+      "choices": [
+        {
+          "text": "Not at all",
+          "value": 0
+        },
+        {
+          "text": "Sometimes",
+          "value": 1
+        },
+        {
+          "text": "Frequently",
+          "value": 2
+        },
+        {
+          "text": "All the time",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "survey_item_type": "number_single_choice_prompt",
+      "survey_item_id": "lethargic-restless",
+      "condition": null,
+      "display_type": "list",
+      "text": "Being too lethargic or too restless",
+      "display_label": "Being too lethargic or too restless",
+      "skippable": false,
+      "default_response": null,
+      "choices": [
+        {
+          "text": "Not at all",
+          "value": 0
+        },
+        {
+          "text": "Sometimes",
+          "value": 1
+        },
+        {
+          "text": "Frequently",
+          "value": 2
+        },
+        {
+          "text": "All the time",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "survey_item_type": "number_single_choice_prompt",
+      "survey_item_id": "dead-hurting",
+      "condition": null,
+      "display_type": "list",
+      "text": "Thoughts that you would be better off dead or hurting yourself",
+      "display_label": "Thoughts that you would be better off dead or hurting yourself",
+      "skippable": false,
+      "default_response": null,
+      "choices": [
+        {
+          "text": "Not at all",
+          "value": 0
+        },
+        {
+          "text": "Sometimes",
+          "value": 1
+        },
+        {
+          "text": "Frequently",
+          "value": 2
+        },
+        {
+          "text": "All the time",
+          "value": 3
+        }
+      ]
+    }
+  ]
+}

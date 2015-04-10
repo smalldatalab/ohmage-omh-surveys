@@ -1,0 +1,23 @@
+{
+
+    "name": "Water Reminder",
+    "description": "Remind the patien to intake water.",
+    "schema_id": {
+        "name" : "heatherYeo", 
+        "namespace" : "heather-yeo-colectomy-water-reminder", 
+        "version" : {
+            "major" : 1, 
+            "minor" : 0
+        }
+    }, 
+
+    "survey_items" : [
+        {
+            "survey_item_type": "message", 
+            "survey_item_id": "waterReminder", 
+            "condition": null,
+            "text": "Please drink a glass of water if you haven\u0027t in the the last hour."
+        }
+    ]
+}
+

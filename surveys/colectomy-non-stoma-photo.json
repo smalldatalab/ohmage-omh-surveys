@@ -1,0 +1,27 @@
+{
+    "name": "Non-Stoma Photo",
+    "description": "A survey to gather images about a patient\u0027s urine after colectomy",
+    "schema_id": {
+        "name" : "heatherYeo-non-stoma", 
+        "namespace" : "heather-yeo-colectomy-non-stoma-survey", 
+        "version" : {
+            "major" : 1, 
+            "minor" : 0
+        }
+    }, 
+
+    "survey_items": [
+        {
+            "survey_item_type": "image_prompt", 
+            "survey_item_id": "NonStomaUrinePhoto", 
+            "condition": null,
+            "display_type": "camera", 
+            "display_label": "Urine Photo",
+            "text": "Please take a photo of your urine.",
+            "skippable": false,
+            "default_response": null, 
+            "max_dimension": null
+        } 
+    ]
+}
+

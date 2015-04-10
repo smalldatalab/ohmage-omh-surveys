@@ -1,0 +1,410 @@
+
+
+  {
+    "schema_id": {
+      "namespace": "hss",
+      "name": "hip-work-life-quality",
+      "version": {
+        "major": 1,
+        "minor": 0
+      }
+    },
+    "name": "HOOS Jr, RTW, QOL-hip",
+    "description": "A survey to gather information about a patient's hip, ability to work, and quality of life.",
+    "survey_items": [
+      {
+        "survey_item_type": "string_single_choice_prompt",
+        "survey_item_id": "Stairs",
+        "condition": null,
+        "display_type": "LIST",
+        "text": "What amount of hip pain have you experienced the last week going up or down stairs?",
+        "display_label": "Stairs",
+        "skippable": false,
+        "default_response": null,
+        "choices": [
+          {
+            "text": "None",
+            "value": "None"
+          },
+          {
+            "text": "Mild",
+            "value": "Mild"
+          },
+          {
+            "text": "Moderate",
+            "value": "Moderate"
+          },
+          {
+            "text": "Severe",
+            "value": "Severe"
+          },
+          {
+            "text": "Extreme",
+            "value": "Extreme"
+          }
+        ]
+      },
+      {
+        "survey_item_type": "string_single_choice_prompt",
+        "survey_item_id": "Uneven",
+        "condition": null,
+        "display_type": "LIST",
+        "text": "What amount of hip pain have you experienced the last week walking on an uneven surface?",
+        "display_label": "Uneven",
+        "skippable": false,
+        "default_response": null,
+        "choices": [
+          {
+            "text": "None",
+            "value": "None"
+          },
+          {
+            "text": "Mild",
+            "value": "Mild"
+          },
+          {
+            "text": "Moderate",
+            "value": "Moderate"
+          },
+          {
+            "text": "Severe",
+            "value": "Severe"
+          },
+          {
+            "text": "Extreme",
+            "value": "Extreme"
+          }
+        ]
+      },
+      {
+        "survey_item_type": "string_single_choice_prompt",
+        "survey_item_id": "Rising",
+        "condition": null,
+        "display_type": "LIST",
+        "text": "Please indicate the degree of difficulty you have experienced in the last week due to your hip in rising from sitting:",
+        "display_label": "Rising",
+        "skippable": false,
+        "default_response": null,
+        "choices": [
+          {
+            "text": "None",
+            "value": "None"
+          },
+          {
+            "text": "Mild",
+            "value": "Mild"
+          },
+          {
+            "text": "Moderate",
+            "value": "Moderate"
+          },
+          {
+            "text": "Severe",
+            "value": "Severe"
+          },
+          {
+            "text": "Extreme",
+            "value": "Extreme"
+          }
+        ]
+      },
+      {
+        "survey_item_type": "string_single_choice_prompt",
+        "survey_item_id": "Bending",
+        "condition": null,
+        "display_type": "LIST",
+        "text": "Please indicate the degree of difficulty you have experienced in the last week due to your hip in bending to the floor / picking up an object:",
+        "display_label": "Bending",
+        "skippable": false,
+        "default_response": null,
+        "choices": [
+          {
+            "text": "None",
+            "value": "None"
+          },
+          {
+            "text": "Mild",
+            "value": "Mild"
+          },
+          {
+            "text": "Moderate",
+            "value": "Moderate"
+          },
+          {
+            "text": "Severe",
+            "value": "Severe"
+          },
+          {
+            "text": "Extreme",
+            "value": "Extreme"
+          }
+        ]
+      },
+      {
+        "survey_item_type": "string_single_choice_prompt",
+        "survey_item_id": "Bed",
+        "condition": null,
+        "display_type": "LIST",
+        "text": "Please indicate the degree of difficulty you have experienced in the last week due to your hip in lying in bed (turning over, maintaining hip position):",
+        "display_label": "Bed",
+        "skippable": false,
+        "default_response": null,
+        "choices": [
+          {
+            "text": "None",
+            "value": "None"
+          },
+          {
+            "text": "Mild",
+            "value": "Mild"
+          },
+          {
+            "text": "Moderate",
+            "value": "Moderate"
+          },
+          {
+            "text": "Severe",
+            "value": "Severe"
+          },
+          {
+            "text": "Extreme",
+            "value": "Extreme"
+          }
+        ]
+      },
+      {
+        "survey_item_type": "string_single_choice_prompt",
+        "survey_item_id": "Sitting",
+        "condition": null,
+        "display_type": "LIST",
+        "text": "Please indicate the degree of difficulty you have experienced in the last week due to your hip in sitting:",
+        "display_label": "Sitting",
+        "skippable": false,
+        "default_response": null,
+        "choices": [
+          {
+            "text": "None",
+            "value": "None"
+          },
+          {
+            "text": "Mild",
+            "value": "Mild"
+          },
+          {
+            "text": "Moderate",
+            "value": "Moderate"
+          },
+          {
+            "text": "Severe",
+            "value": "Severe"
+          },
+          {
+            "text": "Extreme",
+            "value": "Extreme"
+          }
+        ]
+      },
+      {
+        "survey_item_type": "string_single_choice_prompt",
+        "survey_item_id": "Work",
+        "condition": null,
+        "display_type": "LIST",
+        "text": "If employed, have you worked the past week?",
+        "display_label": "Work",
+        "skippable": false,
+        "default_response": null,
+        "choices": [
+          {
+            "text": "Yes",
+            "value": "Yes"
+          },
+          {
+            "text": "No",
+            "value": "No"
+          },
+          {
+            "text": "Not employed",
+            "value": "Not employed"
+          }
+        ]
+      },
+      {
+        "survey_item_type": "string_single_choice_prompt",
+        "survey_item_id": "JobDemands",
+        "condition": null,
+        "display_type": "LIST",
+        "text": "How much difficulty have you had meeting your current job demands in the past week?",
+        "display_label": "JobDemands",
+        "skippable": false,
+        "default_response": null,
+        "choices": [
+          {
+            "text": "No difficulty",
+            "value": "No difficulty"
+          },
+          {
+            "text": "Some difficulty",
+            "value": "Some difficulty"
+          },
+          {
+            "text": "A lot of difficulty",
+            "value": "A lot of difficulty"
+          },
+          {
+            "text": "Did not work this past week because of affected hip",
+            "value": "Did not work this past week because of affected hip"
+          },
+          {
+            "text": "Did not work this past week unrelated to affected hip",
+            "value": "Did not work this past week unrelated to affected hip"
+          }
+        ]
+      },
+      {
+        "survey_item_type": "number_prompt",
+        "survey_item_id": "Pain",
+        "condition": null,
+        "display_type": "PICKER",
+        "text": "What is your current level of pain? (0-10, 10 being the worst)",
+        "display_label": "Pain",
+        "skippable": false,
+        "default_response": null,
+        "min": 0,
+        "max": 10,
+        "whole_numbers_only": true
+      },
+      {
+        "survey_item_type": "string_single_choice_prompt",
+        "survey_item_id": "Aware",
+        "condition": null,
+        "display_type": "LIST",
+        "text": "How often are you aware of your hip problem?",
+        "display_label": "Aware",
+        "skippable": false,
+        "default_response": null,
+        "choices": [
+          {
+            "text": "Never",
+            "value": "Never"
+          },
+          {
+            "text": "Monthly",
+            "value": "Monthly"
+          },
+          {
+            "text": "Weekly",
+            "value": "Weekly"
+          },
+          {
+            "text": "Daily",
+            "value": "Daily"
+          },
+          {
+            "text": "Constantly",
+            "value": "Constantly"
+          }
+        ]
+      },
+      {
+        "survey_item_type": "string_single_choice_prompt",
+        "survey_item_id": "Lifestyle",
+        "condition": null,
+        "display_type": "LIST",
+        "text": "Have you modified your lifestyle to avoid activities that are potentially damaging to your hip?",
+        "display_label": "Lifestyle",
+        "skippable": false,
+        "default_response": null,
+        "choices": [
+          {
+            "text": "Not at all",
+            "value": "Not at all"
+          },
+          {
+            "text": "Mildly",
+            "value": "Mildly"
+          },
+          {
+            "text": "Severely",
+            "value": "Severely"
+          },
+          {
+            "text": "Totally",
+            "value": "Totally"
+          }
+        ]
+      },
+      {
+        "survey_item_type": "string_single_choice_prompt",
+        "survey_item_id": "Confidence",
+        "condition": null,
+        "display_type": "LIST",
+        "text": "How much are you troubled by the lack of confidence in your hip?",
+        "display_label": "Confidence",
+        "skippable": false,
+        "default_response": null,
+        "choices": [
+          {
+            "text": "Not at all",
+            "value": "Not at all"
+          },
+          {
+            "text": "Mildly",
+            "value": "Mildly"
+          },
+          {
+            "text": "Severely",
+            "value": "Severely"
+          },
+          {
+            "text": "Totally",
+            "value": "Totally"
+          }
+        ]
+      },
+      {
+        "survey_item_type": "string_single_choice_prompt",
+        "survey_item_id": "Difficulty",
+        "condition": null,
+        "display_type": "LIST",
+        "text": "In general, how much difficulty do you have with your hip?",
+        "display_label": "Difficulty",
+        "skippable": false,
+        "default_response": null,
+        "choices": [
+          {
+            "text": "None",
+            "value": "None"
+          },
+          {
+            "text": "Mild",
+            "value": "Mild"
+          },
+          {
+            "text": "Moderate",
+            "value": "Moderate"
+          },
+          {
+            "text": "Severe",
+            "value": "Severe"
+          },
+          {
+            "text": "Extreme",
+            "value": "Extreme"
+          }
+        ]
+      },
+      {
+        "survey_item_type": "text_prompt",
+        "survey_item_id": "Activities",
+        "condition": null,
+        "display_type": "TEXTBOX",
+        "text": "What activities are you experiencing the most difficulty with due to your hip?",
+        "display_label": "Activities",
+        "skippable": false,
+        "default_response": null,
+        "min": 1,
+        "max": 50
+      }
+    ]
+  }
+
